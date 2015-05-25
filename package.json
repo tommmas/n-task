@@ -1,0 +1,35 @@
+{
+  "name": "rest-tasks",
+  "version": "1.0.0",
+  "description": "A queue to manage the execution of tasks on the server via a REST like way.
+",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/istanbul test ./node_modules/.bin/_mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tommmas/n-task.git"
+  },
+  "keywords": [
+    "task",
+    "queue"
+  ],
+  "author": "Tom Missen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tommmas/rest-tasks/issues"
+  },
+  "homepage": "https://github.com/tommmas/rest-tasks",
+  "dependencies": {
+    "lodash": "^3.9.1",
+    "node-uuid": "^1.4.3"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "istanbul": "^0.3.14",
+    "mocha": "^2.2.5",
+    "sinon": "^1.14.1",
+    "sinon-chai": "^2.7.0"
+  }
+}
