@@ -1,11 +1,11 @@
 {
   "name": "rest-tasks",
   "version": "1.0.0",
-  "description": "A queue to manage the execution of tasks on the server via a REST like way.
-",
+  "description": "A queue to manage the execution of tasks on the server via a REST like way.",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/istanbul test ./node_modules/.bin/_mocha"
+    "test": "mocha",
+    "test-cov": "./node_modules/.bin/istanbul test ./node_modules/.bin/_mocha"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/tommmas/rest-tasks",
   "dependencies": {
-    "lodash": "^3.9.1",
     "node-uuid": "^1.4.3"
   },
   "devDependencies": {

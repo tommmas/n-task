@@ -119,6 +119,17 @@ describe('Queue', function () {
       expect(fn).to.have.been.calledOnce;
       expect(fn).to.have.been.calledWith(job1);
     });
+    it('should be called for job initiation', function () {
+      var queue = new Queue('test queue');
+      var fn = sinon.spy();
+      queue.on('started', fn);
+      var job1 = queue.add({job:1});
+      queue.process(function (job) {
+        job.progress(1);
+      });
+      expect(fn).to.have.been.calledOnce;
+      expect(fn).to.have.been.calledWith(job1);
+    });
   });
   describe('#purge', function () {
     it('should clear completed and failed jobs', function () {
